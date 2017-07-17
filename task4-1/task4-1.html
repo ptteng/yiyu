@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>task4</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+
+        a{
+            text-decoration: none;
+        }
+
+        a:link {
+            text-decoration: none;
+        }
+
+        html{
+            font-size:62.5%;
+        }
+
+        body{
+            background: #eff0f4;
+        }
+
+        .header{
+            width:100%;
+            height:50px;
+            background: #5fc0cd;
+            position: fixed;
+            top:0;
+        }
+
+        .close1{
+            color: #ffffff;
+            font-size:2rem;
+            float: left;
+            line-height: 50px;
+            position: absolute;
+            left:10%;
+        }
+
+        .header p{
+            color: #ffffff;
+            font-size: 2rem;
+            float: left;
+            line-height: 50px;
+            position: relative;
+            left:50%;
+            transform: translateX(-50%);
+        }
+
+        .register{
+            color: #ffffff;
+            font-size: 2rem;
+            float: left;
+            line-height: 50px;
+            position: absolute;
+            right:10%;
+        }
+
+        .div-form{
+            position: relative;
+            top:55px;
+        }
+
+        .phone img{
+            width: 15px;
+            height:23px;
+        }
+
+        .phone{
+            width:30px;
+            height:24px;
+            border-right:2px #eaedee solid;
+            position: relative;
+            top:37px;
+            left:20px;
+        }
+
+        .user{
+            display: block;
+            width: 100%;
+            height: 50px;
+            border: none;
+            text-indent: 80px;
+            outline: none;
+        }
+
+        .password {
+            display: block;
+            width: 100%;
+            height: 50px;
+            border: none;
+            text-indent: 80px;
+            outline: none;
+        }
+
+        .submit{
+            color: white;
+            background: #5FC0CD;
+            width: 100%;
+            height: 50px;
+            font-weight:bold;
+            font-size: 2rem;
+            border: none;
+            letter-spacing: 10px;
+            position: relative;
+            top:20px;
+        }
+
+        .mima{
+            font-size: 2rem;
+            color: #5FC0CD;
+            float: right;
+            margin-top:100px;
+            margin-right:20px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="header">
+        <a href="#" class="close1">关闭</a>
+        <p>登陆</p>
+        <a href="#" class="register">注册</a>
+    </div>
+
+    <div class="div-form">
+        <form>
+            <div class="phone">
+                <img src="task4-1.png">
+            </div>
+            <input class="user" type="text" name="user" placeholder="请输入手机号" maxlength="11">
+            <div class="phone">
+                <img src="task4-2.png">
+            </div>
+            <input class="password" type="password" name="password" placeholder="请输入密码"><br />
+            <input class="submit" name="submit" type="submit" value="登陆" >
+        </form>
+    </div>
+    <a class="mima" href="#">忘记密码？</a>
+
+</body>
+</html>
