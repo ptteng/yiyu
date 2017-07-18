@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" contrnt="width=device-width,initial-scale=1">
+		<title>task5</title>
+		
+		<style>
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			
+			.header{
+				width: 100%;
+				height: 100px;
+				background: #5FC0CD;
+				position: fixed;
+				top: 0;
+				z-index: 1;
+				
+			}
+			
+			.header a img{
+				width: 24px;
+				height: 37px;
+				position: relative;
+				top: 31px;
+				left: 40px;
+			}
+			
+			.header h1{
+				color: white;
+				text-align: center;
+				position: relative;
+				top: -10px;
+			}
+			
+			.banner{
+				width: 100%;
+				height: 328px;
+				padding-top: 100px;
+				background: blue;
+				background: url(img/task5-6.png); center center no-repeat;
+				background-size: cover;
+			}
+			
+			.banner .touxiang{
+				float: left;
+				margin-left: 30px;
+				margin-top: 77px;
+			}
+			
+			.banner .name{
+				color: #ffffff;
+				font-size: 35px;
+				float: left;
+				margin-left: 40px;
+				margin-top: 118px;
+			}
+			
+			.banner .address{
+				color: #ffffff;
+				font-size: 23px;
+				float: left;
+				margin-left: -190px;
+				margin-top: 175px;
+			}
+			
+			.content{
+				width: 100%;
+				height: 1000px;
+				overflow: scroll;
+			}
+			
+			.content .div1{
+				width: 100%;
+				height: 100px;
+				border-bottom-style: solid;
+				border-bottom-color: #e1e5e7;
+			}
+			
+			.content h2{
+				font-size: 30px;
+				border-left: 4px #5FC0CD solid;
+				float: left;
+				padding-left: 27px;
+				margin-left: 30px;
+				margin-top: 30px;
+			}
+			
+			.content .div2{
+				width: 96%;
+				height: 100px;
+				border-bottom: #E1E5E7 solid;
+				margin-left: 2%;	
+			}
+			
+			.content .div2 .p1{
+				font-size: 26px;
+				float: left;
+				margin-left: 60px;
+				margin-top: 35px;
+			}
+			
+			.content .div2 .p2{
+				font-size: 26px;
+				float: left;
+				margin-left: 28px;
+				margin-top: 35px;
+			}
+			
+			.content .div3{
+				width: 96%;
+				height: 100px;
+				border-bottom: #E1E5E7 solid;
+				margin-left: 2%;
+			}
+			
+			.content .div3 .p3{
+				width: 156px;
+				height: 30px;
+				font-size: 26px;
+				border-right: #E1E5E7 solid;
+				color: #999999;
+				float: left;
+				margin-top: 35px;
+				margin-left: 60px;
+			}
+			
+			.content .div3 .p4{
+				font-size: 26px;
+				float: left;
+				margin-left: 40px;
+				margin-top: 35px;
+			}
+			
+			.content .div4{
+				width: 96%;
+				height: 100px;
+				border-bottom: #E1E5E7 solid;
+				margin-left: 2%;
+			}
+			
+			.content .div4 .p5{
+				width: 156px;
+				height: 30px;
+				font-size: 26px;
+				border-right: #E1E5E7 solid;
+				color: #999999;
+				float: left;
+				margin-top: 35px;
+				margin-left: 60px;
+			}
+			
+			.content .div4 .p6{
+				font-size: 26px;
+				float: left;
+				margin-left: 40px;
+				margin-top: 35px;
+			}
+			
+			.content .div5{
+				width: 96%;
+				height: 100px;
+				border-bottom: #E1E5E7 solid;
+				margin-left: 2%;
+			}
+			
+			.content .div5 .p7{
+				width: 156px;
+				height: 30px;
+				font-size: 26px;
+				border-right: #E1E5E7 solid;
+				color: #999999;
+				float: left;
+				margin-top: 35px;
+				margin-left: 60px;
+			}
+			
+			.content .div5 .p8{
+				font-size: 26px;
+				float: left;
+				margin-left: 40px;
+				margin-top: 35px;
+			}
+			
+			.content .div6{
+				display:inline-block !important;
+				position: relative;
+				width: 96%;
+				border-bottom: #E1E5E7 solid;
+				margin-left: 2%;
+			}
+			
+			.content .div6 .p9{
+				display: block;
+				width: 156px;
+				height: 30px;
+				border-right: #E1E5E7 solid;
+				color: #999999;
+				font-size: 26px;
+				position: absolute;
+				top: 50%;
+				left: 60px;
+				transform: translateY(-50%);
+			}
+			
+			.content .div6 .p10{
+				font-size: 26px;
+				margin-left: 250px;
+				padding: 1%;
+				
+				
+			}
+			
+			.footer{
+				width: 100%;
+				height: auto;
+				background: white;
+				position: fixed;
+				bottom: 0;
+			}
+			
+			.footer a{
+				display: block;
+				float: left;
+				border:2px #5FC0CD solid;
+				border-radius: 10px;
+				width: 45%;
+				height: 90px;
+				margin: 2%;
+				text-decoration: none;
+				font-size: 33px;
+				text-align: center;
+				line-height: 90px;
+			}
+			.footer .footer-a1{
+				color: #5FC0CD;
+				
+			}
+			
+			.footer .footer-a2{
+				color: white;
+				background: #5FC0CD;
+			}
+			
+		</style>
+		
+	</head>
+	<body>
+		<div class="header">
+			<a href="#"><img src="img/task5-1_03.png"  /></a>
+			<h1>个人主页</h1>
+		</div>
+		
+		<div class="banner">
+			<img class="touxiang" src="img/task5o.png" />
+			<p class="name">徐士林 55岁</p>
+			<p class="address"><img src="img/Shape-4.png" />&nbsp;&nbsp;京城·四方·报纸林</p>
+		</div>
+		
+		<div class="content">
+			<div class="div1">
+				<h2>专业技能</h2>
+			</div>
+			<div class="div2">
+				<p class="p1"><img src="img/task5-1_06.png" />住家</p>
+				<p class="p2"><img src="img/task5-1_06.png" />不含餐</p>
+			</div>
+			<div class="div3">
+				<p class="p3">从业年限</p>
+				<p class="p4">0~3年</p>
+			</div>
+			<div class="div4">
+				<p class="p5">工作时间</p>
+				<p class="p6">全天</p>
+			</div>
+			<div class="div5">
+				<p class="p7">服务价格</p>
+				<p class="p8">25元/小时</p>
+			</div>
+			<div class="div6">
+				<p class="p9">自我介绍</p>
+				<p class="p10">可以洗衣、做饭、照顾老人,可以洗衣、做饭、照顾老人,可以洗衣、做饭、照顾老人,可以洗衣、做饭、照顾老人。</p>
+			</div>
+			
+		</div>
+		
+		<div class="footer">
+			<a href="#" class="footer-a1">留言</a>
+			<a href="#" class="footer-a2">电话联系</a>
+		</div>
+		
+	</body>
+</html>
