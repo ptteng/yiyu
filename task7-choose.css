@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+.header{
+    width:100%;
+    height:50px;
+    background: #29bde0;
+    position: relative;
+}
+
+.header a{
+    position: relative;
+    top:12px;
+    left:20px;
+}
+
+.nav-bar{
+    width:90%;
+    height:60px;
+    background: #ffffff;
+    position: relative;
+    top:20px;
+    left:5%;
+    border:1px #c9c9c9 solid;
+}
+
+.nav-bar p{
+    font-size: 1.5rem;
+    text-align: center;
+    line-height: 60px;
+    color: #9a9a9a;
+}
+
+.nav-bar img{
+    float: right;
+    width:12px;
+    height:20px;
+    position: relative;
+    top:-50px;
+    right:10px;
+}
+
+.content{
+    width:90%;
+    height:400px;
+    background-color: #ffffff;
+    border:1px #c9c9c9 solid;
+    position: relative;
+    left:5%;
+    top:40px;
+}
+
+.game_name{
+    width:100%;
+    height:50px;
+    border-bottom: 1px #fbb435 solid;
+    line-height: 50px;
+    text-align: center;
+    font-size: 1.5rem;
+    color: #fbb435;
+}
+
+.content ul{
+    display: block;
+    width:80%;
+    height:auto;
+    position: relative;
+    left:10%;
+    top:20px;
+    text-align: center;
+}
+
+.content .nav-pills>li>a{
+    border-radius: 0;
+}
+
+.content ul li{
+    background-color: #69d1e9;
+    border-radius:0px;
+    font-size: 1.5rem;
+    margin: 15px;
+}
+
+.content ul a{
+    color: #ffffff;
+}
+
+.content ul p{
+    font-size: 1.2rem;
+    color: #787878;
+    position: relative;
+    top:2px;
+}
+
+.content .round-dot{
+    width: 52px;
+    height: 20px;
+    position: relative;
+    left:50%;
+    top:20px;
+    transform: translateX(-50%);
+}
+
+.content .round-dot .dot{
+    display: inline-block;
+    width:10px;
+    height:10px;
+    background: #f0f0f0;
+    border-radius: 5px;
+}
+
+.content .dot:hover{
+    background-color: #69d1e9;
+}
+
+.content .triangle img{
+    width:14px;
+    height: 28px;
+    position: absolute;
+    right:10px;
+    top:180px;
+}
