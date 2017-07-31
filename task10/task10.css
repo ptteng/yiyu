@@ -394,7 +394,11 @@ body{
     padding-bottom: 30px;
     position: relative;
     right:5px;
+    overflow:hidden;
 }
+
+.determine-size-cont .choose-box-but button{
+    float:right;
 
 .determine-size-form .box-size{
     margin: 20px 0 20px 40px;
