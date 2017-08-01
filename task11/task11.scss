@@ -1,0 +1,118 @@
+
+*{
+  padding: 0;
+  margin: 0;
+}
+
+html{
+  font-size: 62.5%;
+}
+
+
+$backgroundcolor: #eff0f4;
+$headercolor: #5fc0cd;
+$headerpadding: 20px;
+$fontsize: 2rem;
+$fontcolor: #ffffff;
+$fontweight: 600;
+$inputwidth: 100%;
+$inputheight: 50px;
+$margin:20px;
+$submit-fontsize:2.5rem;
+$forget-fontsize: 1.5rem;
+
+@mixin phone-border{
+    border-right:2px #eaedee solid;
+}
+
+@mixin phone-size{
+    width:30px;
+    height:24px;
+}
+
+@mixin phone-position{
+    position: relative;
+    top:37px;
+    left:20px;
+}
+
+@mixin phoneimg-size{
+    width: 15px;
+    height:23px;
+}
+
+
+
+
+body{
+    background-color: $backgroundcolor;
+}
+
+.header{
+    background-color: $headercolor;
+    font-size: $fontsize;
+    color: $fontcolor;
+    padding: $headerpadding/2 0;
+    overflow: hidden;
+    text-align: center;
+    .close1{
+        text-decoration: none;
+        color: $fontcolor;
+        float: left;
+        padding-left: $headerpadding;
+    }
+    .register{
+        text-decoration: none;
+        color: $fontcolor;
+        float: right;
+        padding-right: $headerpadding;
+    }
+    span{
+        font-size: $fontsize;
+    }
+}
+
+.content{
+    .user{
+        width: $inputwidth;
+        height: $inputheight;
+        text-indent: 80px;
+        outline: none;
+        border: none;
+    }
+    .password{
+        width: $inputwidth;
+        height: $inputheight;
+        text-indent: 80px;
+        outline: none;
+        border: none;
+    }
+    .phone{
+        @include phone-size;
+        @include phone-border;
+        @include phone-position;
+    }
+    .phone img{
+        @include phoneimg-size;
+    }
+    .submit{
+        width: $inputwidth;
+        height: $inputheight;
+        background-color: $headercolor;
+        outline: none;
+        border: none;
+        cursor:pointer;
+        font-size: $submit-fontsize;
+        color: $fontcolor;
+        margin-top: $margin+5px;
+    }
+}
+
+.forget-password{
+    color: $headercolor;
+    font-size: $forget-fontsize;
+    float: right;
+    margin-top:$margin;
+    margin-right:$margin;
+    text-decoration: none;
+}

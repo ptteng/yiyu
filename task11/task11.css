@@ -1,0 +1,72 @@
+* {
+  padding: 0;
+  margin: 0; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  background-color: #eff0f4; }
+
+.header {
+  background-color: #5fc0cd;
+  font-size: 2rem;
+  color: #ffffff;
+  padding: 10px 0;
+  overflow: hidden;
+  text-align: center; }
+  .header .close1 {
+    text-decoration: none;
+    color: #ffffff;
+    float: left;
+    padding-left: 20px; }
+  .header .register {
+    text-decoration: none;
+    color: #ffffff;
+    float: right;
+    padding-right: 20px; }
+  .header span {
+    font-size: 2rem; }
+
+.content .user {
+  width: 100%;
+  height: 50px;
+  text-indent: 80px;
+  outline: none;
+  border: none; }
+.content .password {
+  width: 100%;
+  height: 50px;
+  text-indent: 80px;
+  outline: none;
+  border: none; }
+.content .phone {
+  width: 30px;
+  height: 24px;
+  border-right: 2px #eaedee solid;
+  position: relative;
+  top: 37px;
+  left: 20px; }
+.content .phone img {
+  width: 15px;
+  height: 23px; }
+.content .submit {
+  width: 100%;
+  height: 50px;
+  background-color: #5fc0cd;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  font-size: 2.5rem;
+  color: #ffffff;
+  margin-top: 25px; }
+
+.forget-password {
+  color: #5fc0cd;
+  font-size: 1.5rem;
+  float: right;
+  margin-top: 20px;
+  margin-right: 20px;
+  text-decoration: none; }
+
+/*# sourceMappingURL=task11.css.map */
