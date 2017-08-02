@@ -1,0 +1,207 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+html{
+  font-size: 62.5%;
+}
+
+$header-backcolor: #5fc0cd;
+$header-color: #ffffff;
+$headerspan-line: 57px;
+$icon-margin: 30px;
+$content-padding: 100px;
+$detail-color:#999999;
+$special-color: #e26163;
+$special-fontweight: 600;
+$fontsize:2rem;
+$detail-fontsize:1.5rem;
+$footer-margin: 3%;
+$footer-color: #ffffff;
+
+@mixin headerimg-margin{
+  margin: 10px 0 10px 10px;
+}
+
+@mixin border-left{
+  border-left:2px #5fc0cd solid;
+}
+
+@mixin border-bottom{
+  border-bottom: 1px #e1e5e7 solid;
+}
+
+@mixin border-right{
+  border-right:1px #e1e5e7 solid;
+}
+
+@mixin padding{
+  padding: 20px 0;
+}
+
+@mixin ability-margin{
+  margin-left: 20px;
+  padding-left: 20px;
+}
+
+@mixin detail-margin{
+  margin: 0 40px;
+}
+
+@mixin detail-padding{
+  padding:0 20px;
+}
+
+@mixin footer-size{
+  width: 100%;
+  height: 80px;
+}
+
+@mixin footer-a{
+  display: block;
+  border:2px #5FC0CD solid;
+  border-radius: 5px;
+  width: 45%;
+  margin-top: 20px;
+  height: 40px;
+  text-decoration: none;
+  font-size: 2rem;
+  text-align: center;
+  line-height: 40px;
+}
+
+
+
+.header{
+  background: $header-backcolor;
+  text-align: center;
+  overflow: hidden;
+  font-size: $fontsize;
+  color: $header-color;
+    img{
+      display: block;
+      float: left;
+      @include headerimg-margin;
+    }
+    span{
+      line-height: $headerspan-line;
+    }
+}
+
+.banner{
+  position: relative;
+  display: flex;
+  align-items: center;
+  img{
+    width: 100%;
+    height: 100%;
+  }
+  .icon{
+    position: absolute;
+    width: 20%;
+    padding: 10% 0;
+    border-radius: 50%;
+    background: url("task12-5.png") center no-repeat;
+    background-size: cover;
+    margin-left: $icon-margin;
+  }
+  .per-inf{
+    position: absolute;
+    margin-left: 30%;
+    span{
+      color: $header-color;
+      font-size: $fontsize;
+    }
+    p{
+      color: $header-color;
+      font-size: 1.2rem;
+      margin-top: 10px;
+    }
+  }
+}
+
+.content{
+  padding-bottom: $content-padding;
+  .ability{
+    font-size: $fontsize;
+    @include padding;
+    @include border-bottom;
+    span{
+      @include border-left;
+      @include ability-margin;
+    }
+  }
+  .condition{
+    font-size: $detail-fontsize;
+    @include detail-margin;
+    @include border-bottom;
+    @include padding;
+    span:nth-child(1){
+      @include border-right;
+      @include detail-padding;
+    }
+    span:nth-child(2){
+      @include detail-padding;
+    }
+  }
+  .detail{
+    font-size: $detail-fontsize;
+    @include detail-margin;
+    @include border-bottom;
+    @include padding;
+    span:nth-child(1){
+      color: $detail-color;
+      @include border-right;
+      @include detail-padding;
+    }
+    span:nth-child(2){
+      @include detail-padding;
+    }
+    .special-color{
+      color: $special-color;
+      font-weight: $special-fontweight;
+    }
+  }
+  .introduction{
+    position: relative;
+    span:nth-child(1){
+      position: absolute;
+      top:50%;
+      transform: translateY(-50%);
+    }
+    span:nth-child(2){
+      display: inline-block;
+      margin-left: 101px;
+    }
+  }
+}
+
+.footer{
+  position: fixed;
+  bottom: 0;
+  background-color: $footer-color;
+  @include footer-size;
+  .footer-left{
+    @include footer-a;
+    color: #5FC0CD;
+    float: left;
+    margin-left: $footer-margin;
+  }
+  .footer-right{
+    @include footer-a;
+    background: #5FC0CD;
+    color: $footer-color;
+    float: right;
+    margin-right: $footer-margin;
+  }
+}
+
+@media screen and (max-width: 376px) {
+  html{
+    font-size: 40%;
+  }
+  .content .introduction span:nth-child(2){
+    margin-left: 81px;
+  }
+}
