@@ -1,0 +1,299 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+html{
+  font-size: 62.5%;
+}
+
+$header-backcolor:#5fc0cd;
+$header-padding:10px 0;
+$list-border-right: 1px #e1e5e7 solid;
+$list-border-bottom: 1px #e1e5e7 solid;
+$list-fontsize:1.5rem;
+$list-padding:20px 0;
+$list-width:33%;
+$content-fontsize:2rem;
+$content-padding:20px 0;
+$content-color:#999999;
+$footer-back-color:#f8fafb;
+$footer-padding:10px 0;
+
+@mixin header-but-size{
+  font-size: 2rem;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+@mixin header-employer-style{
+  background: #55a8b3;
+  color: #ffffff;
+}
+
+@mixin header-employer-position{
+  position: relative;
+  left:50%;
+  transform: translateX(-90%);
+}
+
+@mixin header-worker-style{
+  background: #ffffff;
+  color: #5fc0cd;
+}
+
+@mixin header-worker-position{
+  position: relative;
+  left:50%;
+  transform: translateX(-115%);
+}
+
+@mixin header-icon-size{
+  width: 20px;
+  height: 20px;
+  border: none;
+  background: none;
+}
+
+@mixin header-icon-margin{
+  margin-top:14px;
+  margin-right: 30px;
+}
+
+@mixin triangle-down-style{
+  width:0;
+  height:0;
+  border: 10px;
+  border-radius: 6px;
+  border-style:solid;
+  border-color: #afbac0 transparent transparent transparent;
+}
+
+@mixin triangle-down-position{
+  float: right;
+  position: relative;
+  top:5px;
+  right:10px;
+}
+
+@mixin footer-border{
+  border-top:1px #e1e5e7 solid;
+}
+
+@mixin footer-position{
+  position: fixed;
+  bottom:0;
+}
+
+@mixin footer-button-style{
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+}
+
+@mixin page-button-position{
+  position: absolute;
+  left:25%;
+  transform: translateX(-50%);
+}
+
+@mixin write-button-position{
+  position: relative;
+  left:50%;
+  transform: translateX(-50%);
+}
+
+@mixin mine-button-position{
+  position: absolute;
+  left:75%;
+  transform: translateX(-50%);
+}
+
+.header{
+  background: $header-backcolor;
+  padding: $header-padding;
+  overflow: hidden;
+}
+
+.header-employer{
+  cursor: pointer;
+  @include header-but-size;
+  @include header-employer-style;
+  @include header-employer-position;
+  padding-right: 20px;
+}
+
+.header-worker{
+  cursor: pointer;
+  @include header-but-size;
+  @include header-worker-style;
+  @include header-worker-position;
+}
+
+.header-icon{
+  float: right;
+  @include header-icon-size;
+  @include header-icon-margin;
+}
+
+.header-icon img{
+  @include header-icon-size;
+}
+
+.list{
+  overflow: hidden;
+  border-bottom: $list-border-bottom;
+  .list-left{
+    float: left;
+    width: $list-width;
+    text-align: center;
+    font-size: $list-fontsize;
+    padding: $list-padding;
+    color: #999999;
+    border-right: $list-border-right;
+    .triangle-down{
+      @include triangle-down-style;
+      @include triangle-down-position;
+    }
+  }
+
+  .list-center{
+    float: left;
+    width: $list-width;
+    text-align: center;
+    font-size: $list-fontsize;
+    padding: $list-padding;
+    color: #999999;
+    border-right: $list-border-right;
+    .triangle-down{
+      @include triangle-down-style;
+      @include triangle-down-position;
+    }
+  }
+
+  .list-right{
+    float: left;
+    width: $list-width;
+    text-align: center;
+    font-size: $list-fontsize;
+    padding: $list-padding;
+    color: #999999;
+    .triangle-down{
+      @include triangle-down-style;
+      @include triangle-down-position;
+    }
+  }
+}
+
+.page-body{
+  padding-bottom: 140px;
+}
+
+.content{
+  font-size: $content-fontsize;
+  padding: $content-padding;
+  border-bottom: $list-border-bottom;
+  color: $content-color;
+  .content-service{
+    img{
+      margin-left: 30px;
+      position: relative;
+      top:4px;
+    }
+    span{
+      margin-left: 20px;
+    }
+  }
+  .content-time{
+    padding: $content-padding;
+    overflow: hidden;
+    p:nth-child(1){
+      display: inline-block;
+      margin-left: 75px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      width: 50%;
+    }
+    p:nth-child(2){
+      float: right;
+      span{
+        margin-right: 20px;
+        color: #e63b0e;
+      }
+      img{
+        margin-right: 30px;
+        position: relative;
+        top:3px;
+        width: 12px;
+        height: 20px;
+      }
+    }
+  }
+  .content-address{
+    img{
+      margin-left: 30px;
+      position: relative;
+      top:4px;
+    }
+    span{
+      margin-left: 20px;
+    }
+  }
+}
+
+
+.footer{
+  background: $footer-back-color;
+  padding: $footer-padding;
+  @include footer-position;
+  @include footer-border;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+
+  .page-button{
+    @include page-button-position;
+    @include footer-button-style;
+    color: #5fc0cd;
+    span{
+      display: block;
+    }
+  }
+
+  .write-button{
+    @include write-button-position;
+    @include footer-button-style;
+  }
+
+  .mine-button{
+    @include mine-button-position;
+    @include footer-button-style;
+    color: #999999;
+    span{
+      display: block;
+    }
+  }
+}
+
+
+@media screen and (max-width: 477px) {
+  .content .content-time p:nth-child(1){
+    width: 28%;
+  }
+  html {
+    font-size: 50%;
+  }
+  .write-button img{
+    width: 60px;
+    height: 60px;
+  }
+  .page-button img{
+    width: 30px;
+  }
+  .mine-button img{
+    width: 30px;
+  }
+}
