@@ -1,0 +1,186 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 62.5%;
+    background: #29bde0;
+}
+
+.header{
+    text-align: center;
+    padding: 20px 0;
+    font-size: 3rem;
+    color: #ffffff;
+}
+
+.header .icon-left{
+    float: left;
+    margin-left: 20px;
+}
+
+.header .icon-right{
+    float: right;
+    margin-right: 20px;
+}
+
+.voting-page .audios{
+    position: relative;
+    overflow: hidden;
+    padding: 15px 0;
+    background: #b9e9f5;
+    font-size: 2.5rem;
+}
+
+.voting-page .audios span{
+    margin-left: 50px;
+    position: relative;
+    top:10px;
+}
+
+.voting-page .audios audio{
+    float: right;
+    position: absolute;
+    right:-240px;
+    top:26px;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.voting-page .audios img{
+    float: right;
+    margin-right: 20px;
+}
+
+.voting-page .triangle-down{
+    width: 0;
+    height: 0;
+    border: 7px;
+    border-style: solid;
+    border-color: #b9e9f5 transparent transparent transparent;
+    position: relative;
+    left:70px;
+}
+
+.voting-page .vote-introduction{
+    font-size: 2.5rem;
+    color: #ffffff;
+    margin-left: 70px;
+}
+
+
+.content{
+    overflow: hidden;
+    margin: 0 40px;
+    padding-top: 40px;
+    padding-bottom: 120px;
+}
+
+.content .wrap{
+    float: left;
+    text-align: center;
+    width: 33%;
+}
+
+.content button{
+    height:100px;
+    width: 100px;
+    background: #f5c97b;
+    border: 3px #ffffff solid;
+    position: relative;
+}
+
+.content button span{
+    display: block;
+    width:100%;
+    background: #83b09a;
+    position: absolute;
+    bottom: 0;
+}
+
+.content .wrap .list{
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.content ul{
+    display: inline-block;
+    list-style: none;
+    opacity: 0;
+    height: 20px;
+    margin:auto;
+}
+
+.wrap:hover ul{
+    opacity: 1;
+}
+
+.content ul li{
+    width:20px;
+    height: 20px;
+    background-color: #ffffff;
+    float: left;
+    margin-right: 4px;
+}
+
+.content ul img{
+    width:10px;
+    height:10px;
+    position: relative;
+    top:5px;
+}
+
+
+
+
+.footer{
+    width:100%;
+    padding: 40px 0;
+    position: fixed;
+    bottom:0;
+    text-align: center;
+    background: #29bde0;
+}
+
+.footer .btn{
+    border: none;
+    background-color: #fbb435;
+    height: 60px;
+    width:60%;
+    font-size: 3rem;
+    color: #ffffff;
+}
+
+.footer .btn a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+
+
+
+
+
+@media screen and (max-width: 426px) {
+    html {
+        font-size: 31%;
+    }
+    .content{
+        margin: 0 5px;
+    }
+
+    .icon-left{
+        width: 20px;
+        height: 20px;
+    }
+    .icon-right{
+        width: 18px;
+        height: 18px;
+    }
+    .voting-page .audios img{
+        width: 26px;
+        width: 26px;
+    }
+}
