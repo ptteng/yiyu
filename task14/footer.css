@@ -1,0 +1,64 @@
+.footer{
+    overflow: hidden;
+    background-color: #26a26f;
+    color: #ffffff;
+    font-size: 1.3rem;
+    padding: 40px;
+}
+
+.footer a{
+    color: #ffffff;
+}
+
+.footer .jnshu{
+    float: left;
+    width: 33%;
+}
+
+.footer .jnshu p{
+    margin-top: 50px;
+}
+
+.footer .jnshu p a{
+    display: inline-block;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+
+.footer .web-site{
+    float: left;
+    width: 33%;
+}
+
+.footer .web-site p a{
+    display: inline-block;
+    margin-right: 20px;
+    margin-top: 20px;
+    padding-bottom: 5px;
+    border-bottom: 1px #26a26f solid;
+}
+
+.footer .web-site p a:hover{
+    border-bottom: 1px #ffffff solid;
+}
+
+.footer .weixin{
+    float: left;
+    width: 33%;
+    text-align: right;
+}
+
+.footer .weixin p{
+    margin-bottom: 10px;
+    text-align: right;
+    font-size: 1.5rem;
+}
+
+
+.footer-bottom{
+    width: 100%;
+    padding-bottom: 10px;
+    text-align: center;
+    background-color: #26a26f;
+    color: #ffffff;
+}

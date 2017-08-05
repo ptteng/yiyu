@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 62.5%;
+    background: #fafafa;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul ol{
+    list-style: none;
+}

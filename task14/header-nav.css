@@ -1,0 +1,52 @@
+.header{
+    overflow: hidden;
+    width: 100%;
+    background-color: #ffffff;
+    font-size: 1rem;
+    color: #29b078;
+    height: 40px;
+    line-height: 40px;
+}
+
+.header .service-hotline{
+    margin-left: 40px;
+}
+
+.header-icon{
+    margin-right: 40px;
+    display: inline-block;
+    float: right;
+    height: 29px;
+    position: relative;
+    top:5px;
+}
+
+.navbar{
+    overflow: hidden;
+    width: 100%;
+    height: 100px;
+    line-height: 97px;
+    background: #29b078;
+}
+
+.navbar .navbar-nav{
+    display: inline-block;
+    list-style: none;
+    float: right;
+    margin-right: 40px;
+}
+
+.navbar .navbar-nav li{
+    float: left;
+    border-bottom: 3px #29b078 solid;
+    padding: 0 20px;
+    font-size: 2rem;
+}
+
+.navbar .navbar-nav li a{
+    color: #ffffff;
+}
+
+.navbar .navbar-nav li:hover{
+    border-bottom: 3px #ffffff solid;
+}
