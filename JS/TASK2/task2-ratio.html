@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>玩家设置</title>
+    <link rel="stylesheet" href="css/task2-ratio.css">
+    <link rel="stylesheet" href="css/alert.css">
+</head>
+<body>
+    <div class="header">
+        <img src="img/task2-4.png" class="icon-left">
+        <img src="img/task2-5.png" class="icon-right">
+    </div>
+
+    <p class="caption">
+        玩家配比
+    </p>
+
+    <div class="content">
+        <div class="num">
+            <span class="block"></span>
+            <span class="role"></span>
+        </div>
+        <div class="num">
+            <span class="block"></span>
+            <span class="role"></span>
+        </div>
+        <div class="num">
+            <span class="block"></span>
+            <span class="role"></span>
+        </div>
+        <div class="num">
+            <span class="block"></span>
+            <span class="role"></span>
+        </div>
+        <div class="num">
+            <span class="block"></span>
+            <span class="role"></span>
+        </div>
+        <div class="num">
+            <span class="block"></span>
+            <span class="role"></span>
+        </div>
+        <div class="num">
+            <span class="block"></span>
+            <span class="role"></span>
+        </div>
+        <div class="num">
+            <span class="block"></span>
+            <span class="role"></span>
+        </div>
+        <div class="num">
+            <span class="block"></span>
+            <span class="role"></span>
+        </div>
+        <div class="num">
+            <span class="block"></span>
+            <span class="role"></span>
+        </div>
+        <div class="num">
+            <span class="block"></span>
+            <span class="role"></span>
+        </div>
+        <div class="num">
+            <span class="block"></span>
+            <span class="role"></span>
+        </div>
+        <div class="num">
+            <span class="block"></span>
+            <span class="role"></span>
+        </div>
+        <div class="num">
+            <span class="block"></span>
+            <span class="role"></span>
+        </div>
+        <div class="num">
+            <span class="block"></span>
+            <span class="role"></span>
+        </div>
+        <div class="num">
+            <span class="block"></span>
+            <span class="role"></span>
+        </div>
+        <div class="num">
+            <span class="block"></span>
+            <span class="role"></span>
+        </div>
+        <div class="num">
+            <span class="block"></span>
+            <span class="role"></span>
+        </div>
+    </div>
+
+    <div id="set" class="install" onclick="Set()">
+        <span>点击设置</span>&nbsp;
+        <img src="img/task2-6.png">
+    </div>
+
+    <div class="phrase">
+        <p>水民词组</p>
+        <p>幽灵词组</p>
+    </div>
+
+    <div class="input-box">
+        <label>
+            玩家人数&nbsp;&nbsp;<input type="text" id="playernum" value="6" min="4" max="18" step="1" onblur="LoseFocus()" onkeyup="value=value.replace(/[^\d]/g,'') " >&nbsp;&nbsp;人
+        </label>
+        <label class="slider">
+            <button id="reduce" onclick="Reduce()"><span>-</span></button>
+            <input type="range" class="range" id="range" min="4" max="18" step="1" value="6" oninput="OnInput()">
+            <button id="raise" onclick="Raise()"><span>+</span></button>
+        </label>
+    </div>
+
+    <p class="licensing" onclick="Deal()" id="deal">去发牌</p>
+
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/task2-ratio.js"></script>
+    <script src="js/alert.js"></script>
+</body>
+</html>
