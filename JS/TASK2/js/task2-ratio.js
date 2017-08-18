@@ -117,7 +117,7 @@ function Deal(){
     var c = chaos();
     var p = playernum.value;
     if(c.length == p){
-        window.location.href = "../task3/task3-remake.html"
+        window.location.href = "../TASK3/task3-remake.html"
     }else{
         $(function(){
             var txt = "请先确认身份！";
